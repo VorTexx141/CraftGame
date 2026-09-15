@@ -9,10 +9,15 @@ public class GameManager : MonoBehaviour
     public GameObject LoseScreen;
     public GameObject[] minigames;
     int activeMiniGame = 0;
+    int previousMinigame = 0;
     public float Timer = 10;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Shuffle()
     {
+        foreach (GameObject go in minigames)
+        {
+            go.SetActive(false);
+        }
         for (int i = 0; i < minigames.Length; i++)
         {
             GameObject temp = minigames[i];
@@ -40,11 +45,16 @@ public class GameManager : MonoBehaviour
         }
         instance = this;
         DontDestroyOnLoad(gameObject);
+        StartCoroutine(GameChanger());
     }
     
     public void wingame()
     {
         StartCoroutine(GameChanger());
+    }
+    public void victory()
+    {
+        WinScreen.SetActive(true);
     }
     public void losegame()
     {
@@ -52,12 +62,24 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator GameChanger()
     {
-        WinScreen.SetActive(true);
-        yield return new WaitForSeconds(1);
-        if (activeMiniGame != null)
+        if (activeMiniGame >= minigames.Length)
         {
-            minigames[activeMiniGame].SetActive(false);
+            victory();
         }
+        //WinScreen.SetActive(true);
+        yield return new WaitForSeconds(1);
+        if (activeMiniGame == 0)
+        {
+            minigames[activeMiniGame].SetActive(true);
+            previousMinigame = activeMiniGame;
+        }
+        else if (activeMiniGame > 0)
+        {
+            minigames[previousMinigame].SetActive(false);
+            minigames[activeMiniGame].SetActive(true);
+            previousMinigame = activeMiniGame;
+        }
+        activeMiniGame++;
     }
     IEnumerator LoseGameChanger()
     {
