@@ -1233,7 +1233,8 @@ MonoBehaviour:
   minigames:
   - {fileID: 1166612021}
   - {fileID: 1738032837}
-  MiniGameTime: 15
+  MiniGameTime: 5
+  Lives: 3
 --- !u!4 &1238936849
 Transform:
   m_ObjectHideFlags: 0

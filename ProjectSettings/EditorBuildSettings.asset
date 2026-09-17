@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 5da7950719829394ea1b2c1d686a6c6c
+  - enabled: 1
     path: Assets/Scenes/Ellan testi scene.unity
     guid: bf2b8d71cc0c0e74a93de815d1e96e78
   - enabled: 1

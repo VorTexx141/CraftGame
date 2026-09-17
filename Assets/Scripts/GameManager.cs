@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     int previousMinigame = 0;
     public float MiniGameTime = 10;
     float Timer;
+    bool TimerOn;
+    public int Lives = 3;
+    bool minigamelost = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Shuffle()
     {
@@ -29,8 +32,11 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        Timer -= Time.deltaTime;
-        if (Timer <= 0)
+        if (TimerOn)
+        {
+            Timer -= Time.deltaTime;
+        }
+        if (Timer <= 0 && !minigamelost)
         {
             Timer = 0;
             losegame();
@@ -57,8 +63,19 @@ public class GameManager : MonoBehaviour
     public void victory()
     {
         WinScreen.SetActive(true);
+        TimerOn = false;
     }
     public void losegame()
+    {
+        minigamelost = true;
+        TimerOn = false;
+        Lives--;
+        if (Lives <= 0)
+        {
+            gameover();
+        }
+    }
+    public void gameover()
     {
         StartCoroutine(LoseGameChanger());
     }
@@ -84,12 +101,15 @@ public class GameManager : MonoBehaviour
             }
             activeMiniGame++;
             Timer = MiniGameTime;
+            TimerOn = true;
+            minigamelost = false;
         }
             //WinScreen.SetActive(true);
     }
     IEnumerator LoseGameChanger()
     {
         LoseScreen.SetActive(true);
+        TimerOn = false;
         yield return new WaitForSeconds(1);
     }
 }
