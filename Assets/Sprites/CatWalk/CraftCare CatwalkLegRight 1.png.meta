@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b3e4630e5ec6501469bacb979e58cfbe
+guid: 6154b9770ec98f94bbb6b72d1db1d07c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6550740901014908849
-    second: CraftCare CatwalkTorso_0
+      213: -1218399378405063984
+    second: CraftCare CatwalkLegRight 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CraftCare CatwalkTorso_0
+      name: CraftCare CatwalkLegRight 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 358
-        height: 581
+        width: 222
+        height: 423
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f40526b9bd71715a0800000000000000
-      internalID: -6550740901014908849
+      spriteID: 0d20c9f7830671fe0800000000000000
+      internalID: -1218399378405063984
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CraftCare CatwalkTorso_0: -6550740901014908849
+      CraftCare CatwalkLegRight 1_0: -1218399378405063984
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

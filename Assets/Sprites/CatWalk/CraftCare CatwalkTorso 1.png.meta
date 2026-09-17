@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: 3103f08065eed1743b4503df87b26169
+guid: b7a788d359fa31f4e90953e8351b35c8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1639721797856548431
-    second: CraftCare CatwalkHips_0
-  - first:
-      213: -4864220145826256993
-    second: CraftCare CatwalkHips_1
-  - first:
-      213: -5938171550530572592
-    second: CraftCare CatwalkHips_2
-  - first:
-      213: -5463411195612900063
-    second: CraftCare CatwalkHips_3
-  - first:
-      213: -6643399092821015232
-    second: CraftCare CatwalkHips_4
-  - first:
-      213: -7267791951246536204
-    second: CraftCare CatwalkHips_5
+      213: 564490231721415464
+    second: CraftCare CatwalkTorso 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CraftCare CatwalkHips_0
+      name: CraftCare CatwalkTorso 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 315
-        height: 296
+        width: 381
+        height: 607
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b9ab4466b98e39e0800000000000000
-      internalID: -1639721797856548431
+      spriteID: 823deecffd875d700800000000000000
+      internalID: 564490231721415464
       vertices: []
       indices: 
       edges: []
@@ -140,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a14e923533006f94582a1f4a3f669d2f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -150,12 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CraftCare CatwalkHips_0: -1639721797856548431
-      CraftCare CatwalkHips_1: -4864220145826256993
-      CraftCare CatwalkHips_2: -5938171550530572592
-      CraftCare CatwalkHips_3: -5463411195612900063
-      CraftCare CatwalkHips_4: -6643399092821015232
-      CraftCare CatwalkHips_5: -7267791951246536204
+      CraftCare CatwalkTorso 1_0: 564490231721415464
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

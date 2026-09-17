@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 87cf226228898ee419935eb5755c8fd7
+guid: bf11f1ffeabcf1e4994c469d231ff19e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6996005819859590538
-    second: CraftCare CatwalkDress_0
-  - first:
-      213: -3491943776844959840
-    second: CraftCare CatwalkDress_1
-  - first:
-      213: -8377019713534615098
-    second: CraftCare CatwalkDress_2
-  - first:
-      213: -7806558411657801466
-    second: CraftCare CatwalkDress_3
+      213: -67358333463475151
+    second: CraftCare CatwalkLegLeft 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CraftCare CatwalkDress_1
+      name: CraftCare CatwalkLegLeft 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 754
-        height: 470
+        width: 227
+        height: 434
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0af2585d2af1a8fc0800000000000000
-      internalID: -3491943776844959840
+      spriteID: 13c4f3dd3f1b01ff0800000000000000
+      internalID: -67358333463475151
       vertices: []
       indices: 
       edges: []
@@ -134,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9a18cc42ba0d5cd49be33f71b2c44cb9
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -144,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CraftCare CatwalkDress_0: -6996005819859590538
-      CraftCare CatwalkDress_1: -3491943776844959840
-      CraftCare CatwalkDress_2: -8377019713534615098
-      CraftCare CatwalkDress_3: -7806558411657801466
+      CraftCare CatwalkLegLeft 1_0: -67358333463475151
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

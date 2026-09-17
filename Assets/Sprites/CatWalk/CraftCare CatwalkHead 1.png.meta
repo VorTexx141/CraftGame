@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 7e4a89ab0f4beaa4ca5e615927314093
+guid: 34754982c830da846bab6bfed1aa975a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5650410898557975401
-    second: CraftCare CatwalkHead_0
-  - first:
-      213: -6691673438301126555
-    second: CraftCare CatwalkHead_1
+      213: -2183526766271573420
+    second: CraftCare CatwalkHead 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CraftCare CatwalkHead_1
+      name: CraftCare CatwalkHead 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 219
-        height: 218
+        width: 242
+        height: 236
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 560052d36766223a0800000000000000
-      internalID: -6691673438301126555
+      spriteID: 45253d299fd82b1e0800000000000000
+      internalID: -2183526766271573420
       vertices: []
       indices: 
       edges: []
@@ -128,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9882c341bbb48984ca4f556c6944aadc
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -138,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CraftCare CatwalkHead_0: 5650410898557975401
-      CraftCare CatwalkHead_1: -6691673438301126555
+      CraftCare CatwalkHead 1_0: -2183526766271573420
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
