@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] minigames;
     int activeMiniGame = 0;
     int previousMinigame = 0;
-    public float Timer = 10;
+    public float MiniGameTime = 10;
+    float Timer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Shuffle()
     {
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
     }
     private void Awake()
     {
+        Timer = MiniGameTime;
         Shuffle();
         if (instance != null)
         {
@@ -66,28 +68,28 @@ public class GameManager : MonoBehaviour
         {
             victory();
         }
-        //WinScreen.SetActive(true);
-        yield return new WaitForSeconds(1);
-        if (activeMiniGame == 0)
+        else
         {
-            minigames[activeMiniGame].SetActive(true);
-            previousMinigame = activeMiniGame;
+            yield return new WaitForSeconds(1);
+            if (activeMiniGame == 0)
+            {
+                minigames[activeMiniGame].SetActive(true);
+                previousMinigame = activeMiniGame;
+            }
+            else if (activeMiniGame > 0)
+            {
+                minigames[previousMinigame].SetActive(false);
+                minigames[activeMiniGame].SetActive(true);
+                previousMinigame = activeMiniGame;
+            }
+            activeMiniGame++;
+            Timer = MiniGameTime;
         }
-        else if (activeMiniGame > 0)
-        {
-            minigames[previousMinigame].SetActive(false);
-            minigames[activeMiniGame].SetActive(true);
-            previousMinigame = activeMiniGame;
-        }
-        activeMiniGame++;
+            //WinScreen.SetActive(true);
     }
     IEnumerator LoseGameChanger()
     {
         LoseScreen.SetActive(true);
         yield return new WaitForSeconds(1);
-        if (activeMiniGame != null)
-        {
-            minigames[activeMiniGame].SetActive(false);
-        }
     }
 }
