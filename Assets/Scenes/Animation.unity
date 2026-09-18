@@ -403,6 +403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CatWalk Puppet
       objectReference: {fileID: 0}
+    - target: {fileID: 2398581693488526177, guid: 450aaebe9a568b64e891897e8641a0d9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4384752446189904893, guid: 450aaebe9a568b64e891897e8641a0d9, type: 3}
       propertyPath: m_IsActive
       value: 0
