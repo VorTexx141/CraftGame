@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,8 +14,12 @@ public class GameManager : MonoBehaviour
     public float MiniGameTime = 10;
     float Timer;
     bool TimerOn;
+    public TextMeshProUGUI timeText;
     public int Lives = 3;
     bool minigamelost = false;
+    public GameObject MinigameWinScreen;
+    public GameObject MinigameLostScreen;
+    public GameObject MinigameTransScreen;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Shuffle()
     {
@@ -30,11 +35,15 @@ public class GameManager : MonoBehaviour
             minigames[randomIndex] = temp;
         }
     }
+
+
     private void Update()
     {
         if (TimerOn)
         {
             Timer -= Time.deltaTime;
+            int seconds = Mathf.RoundToInt(Timer);
+            timeText.text = seconds.ToString();
         }
         if (Timer <= 0 && !minigamelost)
         {
@@ -42,6 +51,8 @@ public class GameManager : MonoBehaviour
             losegame();
         }
     }
+
+
     private void Awake()
     {
         Timer = MiniGameTime;
@@ -56,15 +67,20 @@ public class GameManager : MonoBehaviour
         StartCoroutine(GameChanger());
     }
     
+
     public void wingame()
     {
         StartCoroutine(GameChanger());
     }
+
+
     public void victory()
     {
         WinScreen.SetActive(true);
         TimerOn = false;
     }
+
+
     public void losegame()
     {
         minigamelost = true;
@@ -75,6 +91,8 @@ public class GameManager : MonoBehaviour
             gameover();
         }
     }
+
+
     public void gameover()
     {
         StartCoroutine(LoseGameChanger());
@@ -106,6 +124,8 @@ public class GameManager : MonoBehaviour
         }
             //WinScreen.SetActive(true);
     }
+
+
     IEnumerator LoseGameChanger()
     {
         LoseScreen.SetActive(true);
