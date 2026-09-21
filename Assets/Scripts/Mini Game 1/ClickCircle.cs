@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -41,20 +42,19 @@ public class ClickCircle : MonoBehaviour
         {
             if (IsGoodTime)
             {
-                //UnitManager.instance.Spown();
-                //UnitManager.instance.OnSpown.?Invoke(UnitManager.instance.Spown);
+                UnitManager.instance.invokeSpown();
                 Debug.Log("Good!");
                 Destroy(col.gameObject);
             }
             else if (IsPerfectTime)
             {
-                //UnitManager.instance.Spown();
+                UnitManager.instance.invokeSpown();
                 Debug.Log("Perfect!");
                 Destroy(col.gameObject);
             }
             else 
             {
-                //UnitManager.instance.Spown();
+                UnitManager.instance.invokeSpown();
                 Debug.Log("NOT GOOD!!");
                 Destroy(col.gameObject);
             }
@@ -75,7 +75,7 @@ public class ClickCircle : MonoBehaviour
 
     public void End()
     {
-        
+        UnitManager.instance.invokeSpown();
         IsPerfectTime = false;
         Destroy(col.gameObject);
     }

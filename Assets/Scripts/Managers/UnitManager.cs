@@ -36,6 +36,11 @@ public class UnitManager : MonoBehaviour
         Spown();
     }
 
+    public void invokeSpown()
+    {
+        OnSpown?.Invoke();
+    }
+
     public void Spown()
     {
         var rnd = new System.Random();
