@@ -82,6 +82,7 @@ public class GameManager : MonoBehaviour
     IEnumerator WinnerWaiter()
     {
         timeText.gameObject.SetActive(false);
+        yield return new WaitForSeconds(2);
         minigames[previousMinigame].SetActive(false);
         MinigameWinScreen.SetActive(true);
         yield return new WaitForSeconds(1);
