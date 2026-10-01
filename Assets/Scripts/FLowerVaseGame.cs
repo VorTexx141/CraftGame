@@ -16,8 +16,17 @@ public class FLowerVaseGame : MonoBehaviour
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
+            flower.transform.parent = null;
             flower.simulated = true;
             flower.gravityScale = 1;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Flower"))
+        {
+            print("planted");
+            GameManager.instance.wingame();
         }
     }
 }
