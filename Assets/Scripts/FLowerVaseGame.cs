@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class FLowerVaseGame : MonoBehaviour
 {
     public Rigidbody2D flower;
-    public GameObject SpacePrompt;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
