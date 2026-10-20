@@ -430,6 +430,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1754425847
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4502985549154165086, guid: 4540f43f000ab8245b0baf963f0dc591, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502985549154165086, guid: 4540f43f000ab8245b0baf963f0dc591, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502985549154165086, guid: 4540f43f000ab8245b0baf963f0dc591, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502985549154165086, guid: 4540f43f000ab8245b0baf963f0dc591, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502985549154165086, guid: 4540f43f000ab8245b0baf963f0dc591, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502985549154165086, guid: 4540f43f000ab8245b0baf963f0dc591, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502985549154165086, guid: 4540f43f000ab8245b0baf963f0dc591, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502985549154165086, guid: 4540f43f000ab8245b0baf963f0dc591, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502985549154165086, guid: 4540f43f000ab8245b0baf963f0dc591, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502985549154165086, guid: 4540f43f000ab8245b0baf963f0dc591, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204385284486336133, guid: 4540f43f000ab8245b0baf963f0dc591, type: 3}
+      propertyPath: m_Name
+      value: AnimPaperFlowersPackage
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4540f43f000ab8245b0baf963f0dc591, type: 3}
 --- !u!1001 &1909857300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -710,6 +767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWYarnBallTimer
       objectReference: {fileID: 0}
+    - target: {fileID: 6416975345431765786, guid: 219a60a18200f1a4ab740304167a2183, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -868,6 +929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEWTransition
       objectReference: {fileID: 0}
+    - target: {fileID: 7571253020787944579, guid: d5c48c6faf3b1c743b30aac06bd19941, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -947,3 +1012,4 @@ SceneRoots:
   - {fileID: 4506593786812789086}
   - {fileID: 5997559962381613839}
   - {fileID: 4427396164865462274}
+  - {fileID: 1754425847}
