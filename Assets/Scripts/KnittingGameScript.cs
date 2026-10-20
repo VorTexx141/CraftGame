@@ -36,6 +36,7 @@ public class KnittingGameScript : MonoBehaviour
             DPressed = false;
             APrompt.SetActive(false);
             DPrompt.SetActive(true);
+            SoundManager.instance.PlayRandomKnitSound();
         }
         if (Keyboard.current.dKey.wasPressedThisFrame && DPressed == false)
         {
@@ -46,6 +47,7 @@ public class KnittingGameScript : MonoBehaviour
             APrompt.SetActive(true);
             DPrompt.SetActive(false);
             TotalPressed = APressedCount + DPressedCount;
+            SoundManager.instance.PlayRandomKnitSound();
             if (TotalPressed >= PressCount)
             {
                 AddChunk();
