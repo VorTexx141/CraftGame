@@ -946,6 +946,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8519656099370764686, guid: 35743e51d384a5346b848b43790d0d90, type: 3}
+      propertyPath: GameInstructor
+      value: Astele Lavalle
+      objectReference: {fileID: 0}
     - target: {fileID: 9148642497633118338, guid: 35743e51d384a5346b848b43790d0d90, type: 3}
       propertyPath: WalkingSpeed
       value: 1.5
@@ -1108,7 +1112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3264742256155779621, guid: 4feee27e9393afe4db32b81776639f59, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4622805048375614681, guid: 4feee27e9393afe4db32b81776639f59, type: 3}
       propertyPath: m_SortingOrder
@@ -1192,6 +1196,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4943584495715463820, guid: 4feee27e9393afe4db32b81776639f59, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383333396961145008, guid: 4feee27e9393afe4db32b81776639f59, type: 3}
+      propertyPath: m_fontSize
+      value: 47.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383333396961145008, guid: 4feee27e9393afe4db32b81776639f59, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4d5578405e31a394894c05948ae68253, type: 2}
+    - target: {fileID: 8383333396961145008, guid: 4feee27e9393afe4db32b81776639f59, type: 3}
+      propertyPath: m_fontStyle
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383333396961145008, guid: 4feee27e9393afe4db32b81776639f59, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 47.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383333396961145008, guid: 4feee27e9393afe4db32b81776639f59, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1412386903033500078, guid: 4d5578405e31a394894c05948ae68253, type: 2}
+    - target: {fileID: 8383333396961145008, guid: 4feee27e9393afe4db32b81776639f59, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8887404832732221871, guid: 4feee27e9393afe4db32b81776639f59, type: 3}
