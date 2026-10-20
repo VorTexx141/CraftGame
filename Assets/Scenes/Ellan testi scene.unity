@@ -2754,6 +2754,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2b382074b74f2c24e908ec2e6bbbff2d, type: 3}
   - {fileID: 8300000, guid: 2c331f3e9ab37bf4bb2b9727e84eb71b, type: 3}
   - {fileID: 8300000, guid: 74e873b51b35f4640b8b8e67e3c2fea3, type: 3}
+  WalkSounds:
+  - {fileID: 8300000, guid: e93814c014fa17c44bbfa88f2ad16692, type: 3}
+  - {fileID: 8300000, guid: 12d5cfa0d6e081b4fb1f4009fc09cd41, type: 3}
+  - {fileID: 8300000, guid: fb3372a9cd752604596ca1d2f5d54ba3, type: 3}
+  - {fileID: 8300000, guid: 3b4eb890882cca442b9e7b95d80d43c7, type: 3}
   GeneralSource: {fileID: 1238936850}
 --- !u!4 &1462859906 stripped
 Transform:

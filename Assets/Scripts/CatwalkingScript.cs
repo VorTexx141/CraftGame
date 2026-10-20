@@ -59,4 +59,9 @@ public class CatwalkingScript : MonoBehaviour
             DPrompt.SetActive(false);
         }
     }
+
+    public void playWalkSound()
+    {
+        SoundManager.instance.PlayRandomWalkSound();
+    }
 }
