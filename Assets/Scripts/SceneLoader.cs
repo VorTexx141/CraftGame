@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    public AudioSource MenuButtonSoundSource;
+    public AudioClip MenuButtonAudio;
     public void LoadNextScene()
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
@@ -23,7 +25,14 @@ public class SceneLoader : MonoBehaviour
     // Lataa tietyn nimisen scenen (käytettäväksi UI-painikkeissa)
     public void LoadSceneByName(string sceneName)
     {
+        StartCoroutine(SceneLoadDelay(sceneName));
+    }
+    IEnumerator SceneLoadDelay(string sceneName)
+    {
+        MenuButtonSoundSource.PlayOneShot(MenuButtonAudio);
+        yield return new WaitForSeconds(0.4f);
         SceneManager.LoadScene(sceneName);
+
     }
 
     // Lopettaa pelin (UI-painike)

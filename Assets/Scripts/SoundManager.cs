@@ -8,13 +8,15 @@ public class SoundManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
     public void PlayRandomKnitSound()
     {
         int randomKnitSound = Random.Range(0, KnitSounds.Length);
         GeneralSource.PlayOneShot(KnitSounds[randomKnitSound]);
     }
+
+    
     private void Awake()
     {
         
