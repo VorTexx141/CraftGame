@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         minigames[previousMinigame].SetActive(false);
         MinigameWinScreen.SetActive(true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         MinigameWinScreen.SetActive(false);
         StartCoroutine(GameChanger());
     }
@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour
         timeText.gameObject.SetActive(false);
         minigames[previousMinigame].SetActive(false);
         MinigameLostScreen.SetActive(true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         Lives--;
         LifeManager();
         if (Lives <= 0)
