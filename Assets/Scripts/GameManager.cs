@@ -24,6 +24,10 @@ public class GameManager : MonoBehaviour
     public Animator TransitionAnimation;
     public GameObject[] Life;
     public TextMeshProUGUI InstructionText;
+    public AudioSource JingleSource;
+    public AudioClip WinJingle;
+    public AudioClip LoseJingle;
+    public AudioClip IntroJingle;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Shuffle()
     {
@@ -81,10 +85,12 @@ public class GameManager : MonoBehaviour
 
     IEnumerator WinnerWaiter()
     {
+        
         timeText.gameObject.SetActive(false);
         yield return new WaitForSeconds(2);
         minigames[previousMinigame].SetActive(false);
         MinigameWinScreen.SetActive(true);
+        JingleSource.PlayOneShot(WinJingle);
         yield return new WaitForSeconds(2);
         MinigameWinScreen.SetActive(false);
         StartCoroutine(GameChanger());
@@ -127,6 +133,7 @@ public class GameManager : MonoBehaviour
         timeText.gameObject.SetActive(false);
         minigames[previousMinigame].SetActive(false);
         MinigameLostScreen.SetActive(true);
+        JingleSource.PlayOneShot(LoseJingle);
         yield return new WaitForSeconds(2);
         Lives--;
         LifeManager();
@@ -159,6 +166,7 @@ public class GameManager : MonoBehaviour
         {
             InstructionText.text = minigames[activeMiniGame].GetComponent<Instructor>().GameInstructor;
             TransitionAnimation.SetTrigger("Show");
+            JingleSource.PlayOneShot(IntroJingle);
             yield return new WaitForSeconds(3);
             if (activeMiniGame == 0)
             {

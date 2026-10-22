@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class FlowerTagDetector : MonoBehaviour
 {
+    public AudioSource SirFlowerAudioSourceTheSecond;
+    public AudioClip FlowerVase;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +20,7 @@ public class FlowerTagDetector : MonoBehaviour
         if (collision.CompareTag("Flower"))
         {
             print("planted");
+            SirFlowerAudioSourceTheSecond.PlayOneShot(FlowerVase);
             GameManager.instance.wingame();
         }
         if (collision.CompareTag("THE WITHER"))
