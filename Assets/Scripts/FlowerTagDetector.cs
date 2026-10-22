@@ -20,5 +20,9 @@ public class FlowerTagDetector : MonoBehaviour
             print("planted");
             GameManager.instance.wingame();
         }
+        if (collision.CompareTag("THE WITHER"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
