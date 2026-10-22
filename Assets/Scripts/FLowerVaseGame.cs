@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 public class FLowerVaseGame : MonoBehaviour
 {
     public Rigidbody2D flower;
+    public AudioSource SirFlowerAudioSourceTheFirst;
+    public AudioClip FlowerDrop;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +19,7 @@ public class FLowerVaseGame : MonoBehaviour
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
+            SirFlowerAudioSourceTheFirst.PlayOneShot(FlowerDrop);
             flower.transform.parent = null;
             flower.simulated = true;
             flower.gravityScale = 1;
@@ -26,6 +30,7 @@ public class FLowerVaseGame : MonoBehaviour
         if (collision.CompareTag("Flower"))
         {
             print("planted");
+            
             GameManager.instance.wingame();
         }
     }
