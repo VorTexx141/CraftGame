@@ -14678,7 +14678,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Good Job!
+  m_text: Hyvin tehty!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d5578405e31a394894c05948ae68253, type: 2}
   m_sharedMaterial: {fileID: -1412386903033500078, guid: 4d5578405e31a394894c05948ae68253, type: 2}
