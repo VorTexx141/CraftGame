@@ -1096,14 +1096,14 @@ RectTransform:
   m_GameObject: {fileID: 1124655896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49388346, y: 0.49388346, z: 0.49388346}
+  m_LocalScale: {x: 0.45896095, y: 0.45896095, z: 0.45896095}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 836198961}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 90.5, y: -23.8}
+  m_AnchoredPosition: {x: 81.199974, y: -7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1124655898
@@ -1436,14 +1436,14 @@ RectTransform:
   m_GameObject: {fileID: 1886611656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5636266, y: 0.5636266, z: 0.5636266}
+  m_LocalScale: {x: 0.52377254, y: 0.52377254, z: 0.52377254}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 836198961}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 114, y: -27.9}
+  m_AnchoredPosition: {x: 104.7, y: -11.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1886611658
@@ -1632,14 +1632,14 @@ RectTransform:
   m_GameObject: {fileID: 1970173252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1530203, y: 1.031773, z: 1.1530203}
+  m_LocalScale: {x: 1.0714902, y: 0.9588163, z: 1.0714902}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 836198961}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.3, y: 125.5}
+  m_AnchoredPosition: {x: -22.3, y: 131}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1970173254
@@ -1676,7 +1676,10 @@ MonoBehaviour:
 
     Aaro L. - Aanet
 
-    Joona W. - Koodi'
+    Joona W. - Koodi
+
+    A.E
+    - Splash Screen'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d5578405e31a394894c05948ae68253, type: 2}
   m_sharedMaterial: {fileID: -1412386903033500078, guid: 4d5578405e31a394894c05948ae68253, type: 2}
