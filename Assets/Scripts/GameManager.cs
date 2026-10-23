@@ -71,7 +71,6 @@ public class GameManager : MonoBehaviour
             return;
         }
         instance = this;
-        DontDestroyOnLoad(gameObject);
         StartCoroutine(GameChanger());
     }
     
